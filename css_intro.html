@@ -1,0 +1,70 @@
+<!doctype html> <!--html의 시작을 알림-->
+<html><!--html의 틀을 명시-->
+
+<head><!--html의 머리 부분-->
+  <title>HTML 이란 무엇인가?</title><!--Web의 제목 <title</title>-->
+  <meta content="utf-8"><!--Web의 콘텐츠의 내용-->
+</head>
+
+<!--
+Css 선언문 <style> 안에서
+
+- 선택자 우선순위 : tag < class < id (포괄적 < 구체적)
+id 선택자는 중복 x
+-->
+<link href="style.css" rel="stylesheet">
+<
+<style>
+  a {
+     color: black;
+     text-decoration: none;
+  }
+  .Calss_saw{
+    color: gray;
+  }
+  #ID_saw{
+    color: red;
+  }
+</style>
+--!>
+<!--정석적인 CSS선언 태그
+html의 태그의 속성중 style CSS 선언문이 있다.
+두가지 방법이 있음-->
+
+<body><!--html의 몸체 부분-->
+
+  <h1><a href="web_intro.html">WEB</a></h1>
+  <!--<h1>~<h6> 제목 태그(h1~h6)크기 명시 -->
+
+  <!--<a></a>링크 태그 그안에 속성값
+  href : 주소 명시
+  target : 링크를 띄었을때 액션
+  title : 링크의 제목-->
+
+  <ol><!--목차에 대한 Index 넘버링 <ol></ol> -->
+    <li><a href="html_intro.html"
+    title="html 이란?"class="Calss_saw"><h3>HTML 이란?</h3></a></li>
+    <!--목차 태그 <li></li>-->
+    <li><a href="css_intro.html" title="css 이란?" class="Calss_saw"
+    style="color:red;text-decoration : underline;"><h3>CSS 이란?</h3></a></li>
+    <!--
+    html의 태그의 속성중 style CSS 선언문-->
+    <li><a href="JavaScript_intro.html" id="Id_saw"
+    title="JavaScript 이란?"><h3>JavaScript 이란?</h3></a></li>
+  </ol>
+
+<h2>CSS 이란 무엇인가?</h2>
+
+<img src="css.png" width="30%">
+
+  <p>
+  Cascading Style Sheets (CSS) is a <strong>style sheet <u>language</u></strong>
+  used for describing<br>
+  the presentation of a document written in a markup language such as HTML.<br>
+  CSS is a cornerstone technology of the World Wide Web, alongside HTML<br>
+  and JavaScript.
+  </p>
+
+</body>
+
+</html>

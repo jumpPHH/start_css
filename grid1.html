@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+    div{
+      border:5px solid gray;
+    }
+    span{
+      border:5px solid gray;
+    }
+    #grid{
+      border:5px solid pink;
+      display:grid;
+      grid-template-columns : 250px 1fr;
+      /*
+      속성 값 1fr : 그리드 안에 분할되는 단위
+      예) grid-template-columns
+      템플릿 컬럼의 순서대로간다.
+      2fr 1fr; 이면
+      템플릿의 첫번째 컬럼의 크기를 2fr 씩가져가고
+      두번째 컬럼의 크기를 1fr 가져간다는 뜻이된다.
+      */
+      /*
+      - 디자인을 위한 tag : "div", "span" (block vs inline)
+      - 같은 block 내 columns에 크기를 지정하여 배치 :
+      display :grid;
+      grid-template-columns : 크기지정1 크기지정2 ...;
+      - web browser 기술 채택 통계 사이트 : caniuse.com
+      */
+    }
+    #grid-02{
+      border:5px solid pink;
+      display:grid;
+      grid-template-columns : 250px 1fr;
+    }
+  </style>
+
+  <body>
+<div id="grid">
+  <div>NAVIGATIO-block</div>
+  <div>Cascading Style Sheets (CSS) is a <strong>style sheet <u>language</u></strong>
+  used for describing<br>
+  the presentation of a document written in a markup language such as HTML.<br>
+  CSS is a cornerstone technology of the World Wide Web, alongside HTML<br>
+  and JavaScript.</div>
+</div>
+
+<div id="grid-02">
+  <span>NAVIGATION-inline</span>
+  <span>Cascading Style Sheets (CSS) is a <strong>style sheet <u>language</u></strong>
+  used for describing<br>
+  the presentation of a document written in a markup language such as HTML.<br>
+  CSS is a cornerstone technology of the World Wide Web, alongside HTML<br>
+  and JavaScript.</span>
+</div>
+  </body>
+</html>

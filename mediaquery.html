@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+    <style>
+      div{
+        border : 10px solid green;
+        font-size : 60px;
+      }
+      /*
+      @media(min-width:800px){
+        div{
+          display : none;
+        }
+      }
+        screen width > 800px = min-width : 800px
+        조건 : 최소 800
+        <div> 그룹의 사이즈가 800px 보다 커지면
+        display : none;
+
+      @media(max-width:800px){
+        div{
+          display : none;
+        }
+      }
+        screen width < 800px = max-width : 800px
+        조건 : 최대 800
+        <div> 그룹의 사이즈가 800px 보다 작아지면
+        display : none;
+      */
+      @media(max-width:800px){
+        div{
+          display : none;
+        }
+      }
+    </style>
+  <body>
+    <div>
+        Responsive
+    </div>
+  </body>
+</html>

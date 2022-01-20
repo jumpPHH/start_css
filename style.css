@@ -1,0 +1,46 @@
+h1{
+text-align : center;
+border-bottom: 1px solid black;
+padding : 20px;
+margin : 0;
+}
+body {
+margin : 0;
+}
+#grid{
+  display:grid;
+  grid-template-columns : 150px 1fr 2fr;
+}
+#grid ol{
+border-right : 1px solid black;
+width : 150px;
+padding : 20px;
+padding-left : 35px; margin : 0;
+}
+#grid #article{
+  padding-left: 100px;
+}
+#article2{
+  padding-right: 20px;
+}
+a{
+  color : black;
+}
+/*
+screen width < 800px
+*/
+@media(max-width:755px){
+  #grid{
+    display: block;
+  }
+  #grid ol{
+  border-right : none;
+  }
+  h1{
+  border-bottom: none;
+  }
+  /*
+  - mediaquery : 조건(ex> 화면 크기)에 맞춰 디자인을 가변 적용
+  - @media(조건) { ... }
+   */
+}
